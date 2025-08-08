@@ -1,4 +1,3 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = [];
 
 function limpiarCampo() {
@@ -50,5 +49,6 @@ function reiniciarJuego() {
     document.getElementById('resultado').innerHTML = '';
     limpiaVistaListaAmigo();
     limpiarCampo();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
     alert('Juego reiniciado');
 }
