@@ -27,3 +27,14 @@ function actualizarListaAmigo() {
         lista.innerHTML += `<li>${amigos[i]}</li>`;
     }
 }
+
+function sortearAmigo() {
+    if (amigos.length > 0) {
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        let amigoSecreto = document.getElementById('resultado');
+        amigoSecreto.innerHTML = `El amigo secreto sorteado es: ${amigos[indiceAleatorio]}`;
+        
+    } else {
+        alert(`No tienes amigos inscritos para el sorteo`);
+    }
+}
