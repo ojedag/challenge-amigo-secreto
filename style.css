@@ -143,7 +143,8 @@ ul {
 }
 
 /* Botón de sortear título */
-.button-draw {
+.button-draw,
+.button-refresh {
     display: flex;
     align-items: center;
     width: 100%;
@@ -159,4 +160,18 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-refresh {
+    background-color: #820000;
+    color: #000;
+}
+
+.button-refresh img {
+    margin-right: 40px;
+    width: 40px;
+}
+
+.button-refresh:hover {
+    background-color: red;
 }
